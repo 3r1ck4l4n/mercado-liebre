@@ -1,0 +1,79 @@
+.container-form{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.form-title{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+    background-color:#eac926;
+    padding: 10px;
+}
+
+
+form{
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+}
+form label, form button{
+    font-size:18px; 
+}
+
+form input[type=text], form input[type=date], form input[type=password], form input[type=file]{
+    width: 90%;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+form div.buttons button{
+    width: 70%;
+    margin-top: 10px;
+    padding:5px;
+    transition: background-color 450ms, color 450ms;
+}
+
+form div.buttons button:hover{
+    background-color: #1259c3;
+    color: white;
+}
+.container-form div{
+    margin-top: 10px;
+}
+
+form div.form-item  {
+    padding: 10px;
+}
+.form-register{
+    width: 50%;
+}
+
+form label{
+    display: block;
+}
+.multiple-selection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.multiple-selection div{
+    width: 100%;
+}
+
+@media (min-width:576px) {
+    .multiple-selection div{
+        width: 50%;
+    }
+    
+}
