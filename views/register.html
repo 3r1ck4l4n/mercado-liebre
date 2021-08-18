@@ -57,21 +57,21 @@
     <form class="form-register" action="#" method="POST">
       <div class="form-item">
         <label for="fullName">Nombre y Apellidos</label>
-        <input name="fullName" id="fullName" type="text" />
+        <input name="fullName" id="fullName" type="text" required />
       </div>
 
       <div class="form-item">
         <label for="userName">Nombre de usuario</label>
-        <input name="userName" id="userName" type="text" />
+        <input name="userName" id="userName" type="text" required />
       </div>
 
       <div class="form-item" >
         <label for="dateOfBirth">Fecha de nacimiento</label>
-        <input name="dateOfBirth" id="dateOfBirth" type="date" />
+        <input name="dateOfBirth" id="dateOfBirth" type="date" required />
       </div>
       <div class="multiple-selection">
         <div class="form-item">
-          <label for="typeUser">Tipo de usuario:
+          <label for="typeUser" >Tipo de usuario:
             <div><input type="radio" name="typeUser" id="buyer" value="buyer"> Comprador</div>
             <div><input type="radio" name="typeUser" id="seller" value="seller"> Vendedor</div>
           </label>
@@ -90,16 +90,16 @@
 
       <div class="form-item">
         <label for="photoProfile"> Foto de perfil</label>
-        <input type="file" name="photoProfile" accept=".jpg, .png, .jpeg" />
+        <input type="file" name="photoProfile" accept=".jpg, .png, .jpeg" required />
       </div>
       <div class="form-item">
         <label for="password">Password</label>
-        <input type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"/>
+        <input type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required/>
       </div>
 
       <div class="form-item">
         <label for="confirmPassword">Confirmar Password</label>
-        <input type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"/>
+        <input type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required/>
       </div>
       <div class="buttons form-item">
         <button type="submit">Enviar</button>
